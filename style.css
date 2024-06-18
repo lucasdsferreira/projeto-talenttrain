@@ -1,0 +1,192 @@
+@charset "UTF 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: "Lora";
+    src: url("font/Lora-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+:root {
+
+    --cor1: #6118BF;
+    --cor2: #300C63;
+    --cor3: #1E073B;
+    --cor4: #10031D;
+    --cor5: #020003;
+
+    --fonte-padrao: "Lora", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+    margin: auto;
+}
+
+section.tela-login {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-around;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+.descricao-pagamento {
+    display: block;
+    margin: auto;
+}
+
+.form-pagamento {
+    font-family: var(--fonte-padrao);
+    box-shadow: 2px 5px 15px 5px #300c59;
+    padding: 30px 30px 50px 30px;
+    width: 40%;
+    background: #300c59;
+    border-radius: 3px;
+    border: 2px solid white;
+}
+
+.form-pagamento form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.logo {
+    display: block;
+    margin-left: 130px;
+    margin-right: 130px;
+    width: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-pagamento input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+#recover-password-button {
+    display: block;
+    margin: auto;
+    width: 40%;
+    border: 0.5px solid white;
+    background-color: var(--cor3);
+    cursor: pointer;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 0.90em;
+    font-weight: bolder;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#login-button {
+    width: 98%;
+    border: 0.5px solid white;
+    background-color: var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    cursor: pointer;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.outline {
+    width: 98%;
+    border: 0.5px solid white;
+    background-color: var(--cor3);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    cursor: pointer;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+button:active {
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.7;
+}
+
+.form-100 {
+    margin-left: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-50 {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.registrar {
+    font-size: 2em;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    img {
+        height: 150px;
+    }
+
+    section.tela-login {
+        margin: 50px auto;
+    }
+
+    label.logo {
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .form-pagamento input {
+        width: 92%;
+    }
+
+    #recover-password-button {
+        width: 100%;
+    }
+
+    .form-pagamento {
+        width: 70%;
+    }
+
+    .registrar {
+        font-size: 2em;
+        margin-left: 55px;
+        margin-right: 55px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
