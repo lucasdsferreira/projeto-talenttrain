@@ -1,0 +1,142 @@
+@charset "UTF 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+    font-family: "Lora";
+    src: url("font/Lora-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+:root {
+
+    --cor1: #6118BF;
+    --cor2: #300C63;
+    --cor3: #1E073B;
+    --cor4: #10031D;
+    --cor5: #020003;
+
+    --fonte-padrao: "Lora", sans-serif;
+}
+
+* {
+    margin: auto;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor1));
+    margin: auto;
+    height: 730px;
+}
+
+header {
+    min-height: 120px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+section.tela-login {
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-around;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+.form-pagamento {
+    font-family: var(--fonte-padrao);
+    box-shadow: 2px 5px 15px 5px #300c59;
+    padding: 30px 30px 50px 30px;
+    width: 40%;
+    background: #300c59;
+    border-radius: 3px;
+    border: 2px solid white;
+    display: flex;
+}
+
+div.formulario {
+    width: 50%;
+    border: 2px solid white;
+    background-color: var(--cor4);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    color: white;
+    padding: 30px 15px 30px 15px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+div.perfil {
+    width: 50%;
+    border: 2px solid white;
+    background-color: var(--cor4);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    color: white;
+    padding: 30px 15px 30px 15px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+nav {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+a {
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    color: white;
+}
+
+div.perfil:hover {
+    box-shadow: 15px 15px 18px rgba(0, 0, 0, 0.268);
+}
+
+div.formulario:hover {
+    box-shadow: 15px 15px 18px rgba(0, 0, 0, 0.268);
+}
+
+img {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    
+    body {
+        height: 1000px;
+    }
+
+    section.tela-login {
+        margin: 50px auto;
+    }
+
+    img.perfil {
+        margin: auto;
+        margin-left: 72.5px;
+    }
+
+    img.formulario {
+        margin: auto;
+        margin-left: 62.5px;
+    }
+
+    .form-pagamento {
+        width: 70%;
+        display: block;
+    }
+
+    div.formulario {
+        width: 65%;
+    }
+
+    div.perfil {
+        width: 65%;
+    }
+}
