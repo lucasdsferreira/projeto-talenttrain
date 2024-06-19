@@ -96,25 +96,11 @@ label.logo {
 }
 
 #login-button {
-    width: 98%;
+    display: block;
+    margin: auto;
+    width: 70%;
     border: 0.5px solid white;
     background-color: var(--cor5);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
-    cursor: pointer;
-    color: white;
-    font-family: var(--fonte-padrao);
-    font-size: 1em;
-    font-weight: bolder;
-    padding: 10px 5px 10px 5px;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.outline {
-    width: 98%;
-    border: 0.5px solid white;
-    background-color: var(--cor3);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
     cursor: pointer;
     color: white;
@@ -153,6 +139,10 @@ button[disabled] {
     margin-right: 200px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

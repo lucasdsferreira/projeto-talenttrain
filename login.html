@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TalentTrain</title>
+</head>
+<body>
+    <main>
+        <section class="tela-login">
+            <div class="descricao-pagamento">
+                <img src="imagens/logo-ofc.png" alt="" height="350px">
+            </div>
+            <div class="form-pagamento">
+                <form method="post">
+                    <div>
+                        <label class="logo">TalentTrain</label>
+                    </div>
+                    <div class="form-100">
+                        <input type="email" name="email" id="email" placeholder="Digite seu Email:" oninput="validateFields()">
+                    </div>
+                    <div class="form-100">
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha:" oninput="validateFields()">
+                    </div>
+                    <div class="form-50">
+                        <div class="form-100">
+                            <a href="talent-train.html"><button type="button" class="solid" id="login-button" disabled="true">Login</button></a>
+                        </div>
+                    </div>
+                    <div class="form-100">
+                        <button type="button" class="clear" id="recover-password-button" disabled="true">Esqueci minha senha</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
