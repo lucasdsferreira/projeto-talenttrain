@@ -21,13 +21,13 @@
 
 * {
     margin: auto;
-    color: white;
+    text-align: center;
 }
 
 body {
     background-image: linear-gradient(to bottom, var(--cor5), var(--cor1));
     margin: auto;
-    height: 1150px;
+    height: 730px;
     font-family: var(--fonte-padrao);
     text-align: center;
 }
@@ -36,6 +36,7 @@ header {
     min-height: 50px;
     text-align: center;
     padding-top: 40px;
+    color: white;
 }
 
 section.tela-login {
@@ -194,8 +195,28 @@ label.sub {
     color: #C7C7C7;
 }
 
+textarea#sub {
+    padding: 25px 10px 10px 10px;
+    background-color: #300c59;
+    border: 0;
+    border-bottom: 1px solid #C7C7C7;
+    font-size: 1em;
+    margin: 0;
+    color: white;
+    font-family: var(--fonte-padrao);
+    resize: none;
+    height: 300px;
+    overflow: hidden;
+    text-align: start;
+}
+
 textarea::placeholder {
     color: white;
+}
+
+textarea#sub::placeholder {
+    color: #C7C7C7;
+    text-align: start;
 }
 
 textarea:focus {
@@ -221,4 +242,70 @@ h3 {
 
 img {
     margin-top: -25px;
+}
+
+img#logo-form {
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body#ver-respostas {
+        height: 2300px;
+    }
+
+    body#habilidade-resposta {
+        height: 1300px;
+    }
+
+    header {
+        min-height: 70px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    img {
+        height: 80px;
+        margin-top: -35px;
+    }
+
+    section.tela-login {
+        margin: 50px auto;
+    }
+
+    textarea {
+        height: 150px;
+        font-size: 0.9em;
+    }
+
+    textarea.sub {
+        font-size: 0.8em;
+    }
+
+    .form-pagamento {
+        margin: auto;
+        width: 70%;
+    }
+
+    .form-pagamento#titulo {
+        margin: auto;
+        width: 70%;
+    }
+
+    .form-pagamento#pergunta {
+        margin: auto;
+        width: 70%;
+    }
+
+    h1 {
+        padding-top: 30px;
+    }
+
+    div.salvar {
+        margin-left: 130px;
+    }
+
+    img#logo-form {
+        margin-top: 5px;
+    }
 }

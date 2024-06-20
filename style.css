@@ -19,9 +19,23 @@
     --fonte-padrao: "Lora", sans-serif;
 }
 
+* {
+    margin: auto;
+    text-align: center;
+}
+
 body {
     background-image: linear-gradient(to right, var(--cor1), var(--cor5));
     margin: auto;
+}
+
+section.tela-perfil {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-around;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    margin: 30px auto;
 }
 
 section.tela-login {
@@ -67,6 +81,32 @@ label.logo {
     margin-bottom: 5px;
 }
 
+textarea {
+    padding: 20px 10px 0px 10px;
+    background-color: #300c59;
+    border: 0;
+    border-bottom: 1px solid #C7C7C7;
+    font-size: 1.2em;
+    margin: 0;
+    color: white;
+    font-family: var(--fonte-padrao);
+    resize: none;
+    height: 50px;
+    width: 350px;
+    overflow: hidden;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+textarea:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid #C7C7C7;
+    outline: 0;
+}
+
 .form-pagamento input {
     display: block;
     margin: auto;
@@ -95,12 +135,48 @@ label.logo {
     margin-bottom: 5px;
 }
 
+#salvar {
+    width: 50%;
+    border: 2px solid white;
+    background-color: var(--cor4);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    font-size: 1em;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+#salvar:hover {
+    box-shadow: 15px 15px 18px rgba(0, 0, 0, 0.268);
+}
+
 #login-button {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 98%;
     border: 0.5px solid white;
     background-color: var(--cor5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+    cursor: pointer;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.outline {
+    width: 98%;
+    border: 0.5px solid white;
+    background-color: var(--cor3);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
     cursor: pointer;
     color: white;
@@ -178,5 +254,9 @@ a {
         margin-right: 55px;
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 200px;
     }
 }
